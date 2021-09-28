@@ -21,40 +21,43 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Apellido</label>
-                        <input id="inp_ap" type="text" class="form-control1" placeholder="ingrese apellido">
+                        <input id="inp_ape" type="text" class="form-control1" placeholder="ingrese apellido">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">dni</label>
                         <input id="inp_dni" type="number" class="form-control1" placeholder="ingrese dni">
                     </div>
 
+                    <input id="inp_id" type="hidden">
+
                     <button onclick="guardarCliente()" class="btn btn-sucess">Guardar</button>
+                    <button onclick="actualizarCliente()" class="btn btn-primary">Actualizar</button>
                  </div>
+                 <div class="col-8">
 
+                    <table class="table">
+    
+                    <thead>
+                       <tr>
+                           <th>Nombre</th>
+                           <th>Apellido</th>
+                           <th>Dni</th>
+                           <th>Accion</th>
+                       </tr>
+                    </thead>
+    
+                    <tbody id="tbody"> 
+    
+                        
+    
+                    </tbody>
+    
+    
+                    </table>
+    
+                </div>
             </div>
-            <div class="col-8">
-
-                <table class="table">
-
-                <thead>
-                   <tr>
-                       <th>Nombre</th>
-                       <th>Apellido</th>
-                       <th>Dni</th>
-                       <th>Accion</th>
-                   </tr>
-                </thead>
-
-                <tbody id="tbody"> 
-
-                    
-
-                </tbody>
-
-
-                </table>
-
-            </div>
+            
 
           </div>
         </div>
